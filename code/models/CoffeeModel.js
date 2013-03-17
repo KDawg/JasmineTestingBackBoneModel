@@ -1,14 +1,6 @@
 App.Model.Coffee = Backbone.Model.extend({
 
-	defaults: {
-		ingredients: [0, 0, 0, 0, 0],
-		name: '',
-		author: '',
-		message: '',
-		readUrl: ''
-	},
-
-	url: 'http://www.madefreshcoffee.com/',
+	url: 'http://www.madefreshcoffee.com/read.php?sku=bd86292a-241a-11e2-b97c-12313d04a24a',
 
 	getURL: function() {
 		return this.get('readUrl');
