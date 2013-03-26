@@ -20,6 +20,30 @@ App.Model.Coffee = Backbone.Model.extend({
 
 	getURL: function() {
 		return this.get('readUrl');
+	},
+
+	setAuthor: function(newAuthor) {
+		this.set({author: newAuthor});
+	},
+
+	setIngredients: function(newIngredients) {
+		this.set({ingredients: newIngredients});
+	},
+
+	setMessge: function(newMessage) {
+		this.set({message: newMessage});
+	},
+
+	setName: function(newName) {
+		this.set({name: newName});
+	},
+
+	validate: function(attr, options) {
+		debugger;
+		if (attr.author.length > 30) {
+			return 'length too long';
+		}
+		return;
 	}
 
 });
