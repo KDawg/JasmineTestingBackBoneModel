@@ -36,14 +36,6 @@ App.Model.Coffee = Backbone.Model.extend({
 
 	setName: function(newName) {
 		this.set({name: newName});
-	},
-
-	validate: function(attr, options) {
-		debugger;
-		if (attr.author.length > 30) {
-			return 'length too long';
-		}
-		return;
 	}
 
 });

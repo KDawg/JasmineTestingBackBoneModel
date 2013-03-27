@@ -104,15 +104,4 @@ describe('A Coffee Model', function() {
 		});
 	});
 
-	describes('when it validates the set author', function() {
-		var coffee = new App.Model.Coffee();
-
-		it('should reject longer than 20 chars', function() {
-			coffee.setName('1234567890123456789012345678901234567890');
-			debugger;
-			expect(coffee.isValid()).toEqual(false);
-		});
-
-	});
-
 });
